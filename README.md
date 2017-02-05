@@ -3,11 +3,15 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We apply only choice and elimination techniques to reduce the search area. By using it we reduce the possible numbers
+ that can be applied to a box (square). Then we apply the naked twins technique. Therefore it helps to narrow down the 
+ sudoku search area. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We don't. the diagonal problem is a constraint itself. It cannot be applied after reducing the sudoku space are. Because
+it may lead to a sudoku solution that doesn't follow the diagonal constraint. Therefore we applied it first. before the elimination
+and only choice techniques. 
 
 ### Install
 

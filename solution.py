@@ -135,6 +135,11 @@ def only_choice(values_board):
 
 
 def fit_diag(values_board):
+    """
+    apply diagonal constraint to find solutions that match.
+    :param values_board:
+    :return:
+    """
     for diag in diags:
         for box in diag:
             if len(values_board[box]) == 1:
@@ -147,6 +152,11 @@ def fit_diag(values_board):
 
 
 def reduce_puzzle(values_board):
+    """
+    reduce the puzzle search area by application constraint propagation and other techniques.
+    :param values_board:
+    :return:
+    """
     # solved_values = [box for box in values.keys() if len(values[box]) == 1]
     stalled = False
     while not stalled:

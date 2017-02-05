@@ -9,9 +9,8 @@ A: We apply only choice and elimination techniques to reduce the search area. By
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: We don't. the diagonal problem is a constraint itself. It cannot be applied after reducing the sudoku space are. Because
-it may lead to a sudoku solution that doesn't follow the diagonal constraint. Therefore we applied it first. before the elimination
-and only choice techniques. 
+A: the diagonal problem is a constraint itself. It is applied to reduce the sudoku space area so that the diagonal problem fits. Therefore
+it uses constraint propagation by applying the diagonal constraint to the puzzle. 
 
 ### Install
 
